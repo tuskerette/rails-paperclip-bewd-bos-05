@@ -88,13 +88,13 @@ In this example, we'll be building a simple CRUD app for records, and adding ima
   g. Go to your `show.html.erb` and add:
 
   ```erb
-  <p>MEDIUM SIZE: <%= image_tag @record.picture(:medium) %></p>
+  <p>MEDIUM SIZE: <%= image_tag @record.cover(:medium) %></p>
   ```
 
   h. Now add a thumbnail to your `index.html.erb` view of all the records:
 
   ```erb
-  <td><%= image_tag record.picture(:thumb) %></td>
+  <td><%= image_tag record.cover(:thumb) %></td>
   ```
 
 #### Your Turn :: Paperclip
