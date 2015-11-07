@@ -75,7 +75,8 @@ In this example, we'll be building a simple CRUD app for records, and adding ima
       <%= form.file_field :cover%>
       <%= form.submit %>
       <%= link_to 'Back', records_path, class: 'button' %>
-    <% end %>```
+    <% end %>
+    ```
 
   e. Edit your controller: go to the `new` and `edit` methods and delete from these actions the render JSON lines. Then, adjust your strong params function to permit the new property (in this case, `:cover`).
 
